@@ -1,6 +1,6 @@
 let form = document.querySelector("form");
+
 form.addEventListener("submit", (e) => {
-    let flag = true;
     e.preventDefault();
 
     const inputValue = document.querySelector("#Input");
@@ -25,13 +25,7 @@ form.addEventListener("submit", (e) => {
     let checkBoxes = document.querySelectorAll(".checkbox");
     checkBoxes.forEach(box => {
         box.addEventListener("click", (evt) => {
-            if (flag) {
-                box.parentNode.classList.add("check");
-                flag = false;
-            } else {
-                box.parentNode.classList.remove("check");
-                flag = true;
-            }
+                box.parentNode.classList.toggle("check");
         });
     });
     inputValue.value = "";
