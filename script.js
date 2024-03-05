@@ -25,7 +25,7 @@ form.addEventListener("submit", (e) => {
     let checkBoxes = document.querySelectorAll(".checkbox");
     checkBoxes.forEach(box => {
         box.addEventListener("click", (evt) => {
-                box.parentNode.classList.toggle("check");
+            box.parentNode.classList.toggle("check");
         });
     });
     inputValue.value = "";
