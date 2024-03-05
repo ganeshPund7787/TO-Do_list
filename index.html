@@ -22,8 +22,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: pink;
-        border: 2px solid black;
+        background-color: black;
     }
 
     li {
@@ -33,7 +32,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 1vw;
+        border-radius: 1em;
         background-color: aqua;
         border: 2px dashed red;
         position: relative;
@@ -46,12 +45,14 @@
     #Input {
         padding: 0.6em 1em;
         width: 26vmax;
-        background-color: rgba(0, 149, 255, 0.526);
+        background-color: white;
         outline-style: none;
     }
-    i{
+
+    i {
         font-size: 1.3em;
     }
+
     #add {
         padding: 0.5vw 2vw;
         background-color: pink;
@@ -62,10 +63,21 @@
         position: absolute;
         right: 6px;
     }
-    .fa-regular{
+
+    .fa-regular {
         position: absolute;
         left: 6px;
         display: none;
+    }
+
+    .check {
+        text-decoration: line-through;
+        background-color: yellow;
+    }
+
+    .checkbox {
+        margin-left: -220px;
+        position: fixed;
     }
 </style>
 
